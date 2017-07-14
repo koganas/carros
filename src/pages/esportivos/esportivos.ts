@@ -4,14 +4,14 @@ import { CarroService } from '../../providers/carro-service/carro-service';
 import { DetalhesPage } from '../detalhes/detalhes';
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html',
-  providers: [CarroService]
+  selector: 'page-esportivos',
+  templateUrl: 'esportivos.html',
+  providers: [CarroService]  
 })
-export class ContactPage {
+export class EsportivosPage {
   carros: Array<{id: number, nome: string, desc: string, urlFoto: string}>
   constructor(public navCtrl: NavController, public carroService: CarroService) {
-    this.carroService.loadEsporte()
+    this.carroService.loadLuxo()
     .then(data => {
       this.carros = data;
     });

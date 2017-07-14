@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { EsportivosPage } from '../pages/esportivos/esportivos';
+import { LuxoPage } from '../pages/luxo/luxo';
+import { ClassicosPage } from '../pages/classicos/classicos';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DetalhesPage } from '../pages/detalhes/detalhes';
 
@@ -17,9 +17,9 @@ import { CarroService } from '../providers/carro-service/carro-service';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    EsportivosPage,
+    LuxoPage,
+    ClassicosPage,
     TabsPage,
     DetalhesPage
   ],
@@ -31,9 +31,9 @@ import { CarroService } from '../providers/carro-service/carro-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    EsportivosPage,
+    LuxoPage,
+    ClassicosPage,
     TabsPage,
     DetalhesPage
   ],
