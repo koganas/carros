@@ -8,7 +8,16 @@ import { CarroService } from '../../providers/carro-service/carro-service';
 })
 export class DetalhesPage {
   carro:any;
+  tabBarElement: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public carroService: CarroService) {
   	this.carro = navParams.get('item');
+    this.tabBarElement = document.querySelector('ion-tabs#tabs .tabbar');
+  }
+  ionViewDidLoad() {
+    this.tabBarElement.style.display = 'none';
+  }
+  ionViewWillLeave() {
+    this.tabBarElement.style.display = 'flex';
   }
 }
